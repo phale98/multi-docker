@@ -11,7 +11,7 @@ script:
 
 after_success: 
   - docker build -t paulh98/multi-client ./client
-  - dockker build -t paulh98/multi-nginx ./nginx
+  - docker build -t paulh98/multi-nginx ./nginx
   - docker build -t paulh98/multi-server ./server
   - docker build -t paulh98/multi-worker ./worker
 
